@@ -1,7 +1,7 @@
 {
   "name": "oEmbed-node",
   "version": "0.1.0",
-  "description": "A node library to consume oEmbed providers",
+  "description": "A node library to consume oEmbed providers, support for Vimeo and Youtube at the moment",
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/*.tests.js -R spec"
@@ -15,8 +15,7 @@
   },
   "devDependencies": {
     "mocha": "1.7.4",
-    "should": "1.2.1",
-    "sinon": "1.5.2"
+    "should": "1.2.1"
   },
   "keywords": [
     "oEmbed",
