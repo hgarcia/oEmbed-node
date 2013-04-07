@@ -1,4 +1,4 @@
-oEmbed-node
+oembed-node
 ===========
 
 A node library to consume some providers of oEmbed.
@@ -7,7 +7,7 @@ At the moment it only supports YouTube and Vimeo but you can easily extend it to
 
 ### Usage
 
-    var oembed = require('oEmbed-node').init();
+    var oembed = require('oembed-node').init();
     oembed.get({url: "https://vimeo.com/62584176"}, getVideo);
     function getVideo(err, result) {
 
@@ -38,6 +38,6 @@ For example a custom provider for vimeo would be like this:
 
 And you can pass it to the `init` function of the module.
 
-    var oembed = require('oEmbed-node').init(customProviders);
+    var oembed = require('oembed-node').init(customProviders);
 
 You can use the same handler for multiple host names, just associate it to other keys in the hash.
