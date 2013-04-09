@@ -41,3 +41,11 @@ And you can pass it to the `init` function of the module.
     var oembed = require('oembed-node').init(customProviders);
 
 You can use the same handler for multiple host names, just associate it to other keys in the hash.
+
+### Changelog
+
+0.2.0 - Fixed a bug supporting YouTube with multi query parameters
+        Added support for Justin.tv
+        Added support for Revision3
+        Added support for yFrog
+0.1.0 - Initial release support for Vimeo and YouTube
