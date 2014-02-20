@@ -6,7 +6,7 @@ describe('oEmbed', function() {
     it('should get data from Vimeo', function (done) {
       embed.get({url: "https://vimeo.com/62584176"}, function (err, result) {
         result.provider_name.should.eql('Vimeo');
-        result.provider_url.should.eql('http://vimeo.com/');
+        result.provider_url.should.eql('https://vimeo.com/');
         result.video_url.should.eql('https://vimeo.com/62584176');
         done(err);
       });
@@ -20,10 +20,10 @@ describe('oEmbed', function() {
       });
     });
     it('should get data from JustinTv', function (done) {
-      embed.get({url: "http://www.justin.tv/thetechbuzz/b/388302498"}, function (err, result) {
+      embed.get({url: "http://www.justin.tv/meltdowncomics"}, function (err, result) {
         result.provider_name.should.eql('Justin.tv');
         result.provider_url.should.eql('http://justin.tv');
-        result.video_url.should.eql('http://www.justin.tv/thetechbuzz/b/388302498');
+        result.video_url.should.eql('http://www.justin.tv/meltdowncomics');
         done(err);
       });
     });
