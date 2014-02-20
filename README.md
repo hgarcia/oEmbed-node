@@ -1,6 +1,8 @@
 oembed-node
 ===========
 
+[![Build Status](https://travis-ci.org/hgarcia/oEmbed-node.png?branch=master)](https://travis-ci.org/hgarcia/oEmbed-node)
+
 A node library to consume some providers of oEmbed.
 
 At the moment it only supports YouTube and Vimeo but you can easily extend it to work with others via custom providers.
