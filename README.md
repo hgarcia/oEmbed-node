@@ -15,6 +15,14 @@ At the moment it only supports YouTube and Vimeo but you can easily extend it to
 
     }
 
+    // or the same as above with promise
+
+    oembed
+      .get({url: "https://vimeo.com/62584176"})
+      .then(function(result) {/* handle result */})
+      .catch(function(err) {/* deal with errors */});
+
+
 The result will be a literal object with the properties returned by the provider. The library adds a video_url property to the object.
 
 ### Custom providers
