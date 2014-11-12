@@ -8,5 +8,11 @@ describe('Providers', function() {
       provider.should.have.property("getUrls");
       done();
     });
+
+    it('should get a provider for Rutube', function (done) {
+      var provider = providers.init().get("http://rutube.ru/video/59d92e33219f5b81ce0c5375cb537ba0/");
+      provider.should.have.property("getUrls");
+      done();
+    });
   });
-})
+});

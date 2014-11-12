@@ -43,5 +43,13 @@ describe('oEmbed', function() {
         done(err);
       });
     });
+    it('should get data from Rutube', function (done) {
+      embed.get({url: "http://rutube.ru/video/59d92e33219f5b81ce0c5375cb537ba0/"}, function (err, result) {
+        result.provider_name.should.eql('rutube');
+        result.provider_url.should.eql('http://rutube.ru');
+        result.video_url.should.eql('http://rutube.ru/video/59d92e33219f5b81ce0c5375cb537ba0/');
+        done(err);
+      });
+    });
   });
-})
+});
