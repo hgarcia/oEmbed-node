@@ -19,14 +19,6 @@ describe('oEmbed', function() {
         done(err);
       });
     });
-    it('should get data from JustinTv', function (done) {
-      embed.get({url: "http://www.justin.tv/meltdowncomics"}, function (err, result) {
-        result.provider_name.should.eql('Justin.tv');
-        result.provider_url.should.eql('http://justin.tv');
-        result.video_url.should.eql('http://www.justin.tv/meltdowncomics');
-        done(err);
-      });
-    });
     it('should get data from Revision3', function (done) {
       embed.get({url: "http://revision3.com/stufftoblowyourmind/death"}, function (err, result) {
         result.provider_name.should.eql('Revision3');
