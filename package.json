@@ -4,7 +4,8 @@
   "description": "A node library to consume oEmbed providers, support for Vimeo and Youtube at the moment",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.tests.js -t 15000 -R spec"
+    "test": "mocha tests/*.tests.js -t 15000 -R spec",
+    "test-w": "mocha tests/*.tests.js -t 15000 -R spec -w"
    },
   "repository": {
     "type": "git",
@@ -14,8 +15,8 @@
     "curling": "0.3.0"
   },
   "devDependencies": {
-    "mocha": "1.7.4",
-    "should": "1.2.1"
+    "mocha": "2.0.1",
+    "chai": "1.10.0"
   },
   "keywords": [
     "oEmbed",

@@ -1,8 +1,7 @@
 "use strict";
 
 describe("Custom Providers", function () {
-
-  require("should");
+  var expect = require("chai").expect;
 
   it("should get data from a custom provider", function (done) {
     var customProviders, embed;
@@ -28,9 +27,9 @@ describe("Custom Providers", function () {
     embed.get({
       url: "https://vimeo.com/62584176"
     }, function (err, result) {
-      result.provider_name.should.eql("Vimeo");
-      result.provider_url.should.eql("https://vimeo.com/");
-      result.video_url.should.eql("https://vimeo.com/62584176");
+      expect(result.provider_name).to.be.eql("Vimeo");
+      expect(result.provider_url).to.be.eql("https://vimeo.com/");
+      expect(result.video_url).to.be.eql("https://vimeo.com/62584176");
       done(err);
     });
   });
