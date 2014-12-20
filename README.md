@@ -46,8 +46,16 @@ You can use the same handler for multiple host names, just associate it to other
 
 ### Changelog
 
+0.3.0 - Fixed bug on custom providers to actually call `init` thanks to [PR #6](https://github.com/hgarcia/oEmbed-node/pull/6) (Originally reported on [PR #1](https://github.com/hgarcia/oEmbed-node/pull/1) but build was broken)
+        Removed support for Justin.tv thanks to [PR #6](https://github.com/hgarcia/oEmbed-node/pull/6) (Originally reported on [PR #4](https://github.com/hgarcia/oEmbed-node/pull/4) but build was broken)
+        Added support for rutube.ru thanks to [PR #3](https://github.com/hgarcia/oEmbed-node/pull/3)
+
 0.2.0 - Fixed a bug supporting YouTube with multi query parameters
         Added support for Justin.tv
         Added support for Revision3
         Added support for yFrog
 0.1.0 - Initial release support for Vimeo and YouTube
+
+### Collaborators 
+
+Thanks to PR from [aulizko](https://github.com/aulizko) and [finder-dp-lewis](https://github.com/finder-dp-lewis) pushed me to update the library and release v0.3.0
