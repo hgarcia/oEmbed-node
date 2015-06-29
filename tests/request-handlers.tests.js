@@ -24,11 +24,11 @@ describe("oEmbed", function() {
       });
     });
 
-    it("should get data from Revision3", function (done) {
-      embed.get({url: "http://revision3.com/stufftoblowyourmind/death"}, function (err, result) {
-        expect(result.provider_name).to.be.eql("Revision3");
-        expect(result.provider_url).to.be.eql("http://revision3.com");
-        expect(result.video_url).to.be.eql("http://revision3.com/stufftoblowyourmind/death");
+    it("should get data from YouTube with youtu.be url", function (done) {
+      embed.get({url: "http://youtu.be/rpCOr9CFAa0"}, function (err, result) {
+        expect(result.provider_name).to.be.eql("YouTube");
+        expect(result.provider_url).to.be.eql("http://www.youtube.com/");
+        expect(result.video_url).to.be.eql("http://youtu.be/rpCOr9CFAa0");
         done(err);
       });
     });
